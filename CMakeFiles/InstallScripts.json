@@ -1,0 +1,13 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/darius/Dev/cpp/AppGui/cmake_install.cmake",
+		"/home/darius/Dev/cpp/AppGui/Engine/cmake_install.cmake",
+		"/home/darius/Dev/cpp/AppGui/Engine/vendor/glfw/cmake_install.cmake",
+		"/home/darius/Dev/cpp/AppGui/Engine/vendor/glfw/src/cmake_install.cmake",
+		"/home/darius/Dev/cpp/AppGui/Engine/vendor/glfw/docs/cmake_install.cmake",
+		"/home/darius/Dev/cpp/AppGui/Engine/vendor/ImGui/cmake_install.cmake",
+		"/home/darius/Dev/cpp/AppGui/Engine/vendor/glad/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/sandbox.dir/link.d CMakeFiles/sandbox.dir/src/main.cpp.o -o bin/sandbox  lib/libGuiApp.a lib/libimgui.a lib/libglad.a lib/libglfw3.a /usr/lib/librt.a -lm -ldl
