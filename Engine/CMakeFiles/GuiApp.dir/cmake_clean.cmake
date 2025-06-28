@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/GuiApp.dir/cmake_pch.hxx.gch.d"
   "CMakeFiles/GuiApp.dir/src/Application.cpp.o"
   "CMakeFiles/GuiApp.dir/src/Application.cpp.o.d"
+  "CMakeFiles/GuiApp.dir/src/LayerStack.cpp.o"
+  "CMakeFiles/GuiApp.dir/src/LayerStack.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -12,5 +12,7 @@ CXX_FLAGS = -std=gnu++17
 
 # PCH options: Engine/CMakeFiles/GuiApp.dir/src/Application.cpp.o_OPTIONS = -Winvalid-pch;-include;/home/darius/Dev/cpp/AppGui/Engine/CMakeFiles/GuiApp.dir/cmake_pch.hxx
 
+# PCH options: Engine/CMakeFiles/GuiApp.dir/src/LayerStack.cpp.o_OPTIONS = -Winvalid-pch;-include;/home/darius/Dev/cpp/AppGui/Engine/CMakeFiles/GuiApp.dir/cmake_pch.hxx
+
 # PCH options: Engine/CMakeFiles/GuiApp.dir/Platform/Linux/LinuxWindow.cpp.o_OPTIONS = -Winvalid-pch;-include;/home/darius/Dev/cpp/AppGui/Engine/CMakeFiles/GuiApp.dir/cmake_pch.hxx
 

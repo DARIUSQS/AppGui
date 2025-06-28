@@ -1,9 +1,17 @@
 #include "LinuxWindow.h"
 #include "KeyEvent.h"
 #include "MouseEvent.h"
+#include "WindowEvent.h"
 
 namespace AppGui
 {
+    static bool s_glfwInitialized = 0;
+
+    Window* Window::Create(const WindowProp& props)
+    {
+        return new LinuxWindow(props);
+    }
+
     LinuxWindow::LinuxWindow(const WindowProp& props)
     {
         Init(props);
@@ -19,8 +27,14 @@ namespace AppGui
         m_Data.Width = props.Width;
         m_Data.Height = props.Height;
         
+        if(!s_glfwInitialized)
+        {
+            glfwInit();
+            s_glfwInitialized = 1;
+        }
+
         m_Window = glfwCreateWindow(m_Data.Width, m_Data.Height, m_Data.Name.c_str(), nullptr, nullptr);
- 
+
         glfwMakeContextCurrent(m_Window);
 
         glfwSetWindowUserPointer(m_Window, &m_Data);
@@ -31,7 +45,7 @@ namespace AppGui
             data.Width = width;
             data.Height = height;
 
-            WindowResizeEvent event(width, height);
+            EventWindowResize event(width, height);
             data.Callback(event);
         });
             
@@ -39,8 +53,8 @@ namespace AppGui
         {
             WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
 
-            WindowCloseEvent event;
-            data.EventCallback(event);
+            EventWindowClose event;
+            data.Callback(event);
         });
         
         glfwSetKeyCallback(m_Window, [](GLFWwindow* window, int key, int scancode, int action, int mods)
@@ -96,7 +110,7 @@ namespace AppGui
             WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
 
             MouseScrollEvent event(xoffset, yoffset);
-            data.EventCallback(event);
+            data.Callback(event);
         });     
 
         
@@ -106,16 +120,26 @@ namespace AppGui
             WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
 
             MouseMovedEvent event((float)xpos, (float)ypos);
-            data.EventCallback(event);
+            data.Callback(event);
         });
 
         glfwSetCharCallback(m_Window, [](GLFWwindow* window, unsigned int keycode)
         {
             WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
-            KeyEventTyped event(keycode);
-            data.EventCallback(event);
+            KeyTypedEvent event(keycode);
+            data.Callback(event);
         });
-                
-        );
     }
+
+    void LinuxWindow::Shutdown()
+    {
+        glfwDestroyWindow(m_Window);
+    }
+
+    void LinuxWindow::OnUpdate()
+    {   
+        glfwSwapBuffers(m_Window);
+        glfwPollEvents();
+    }
+
 }

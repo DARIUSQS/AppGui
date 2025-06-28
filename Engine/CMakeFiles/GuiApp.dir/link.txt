@@ -1,2 +1,2 @@
-/usr/bin/ar qc ../lib/libGuiApp.a CMakeFiles/GuiApp.dir/src/Application.cpp.o CMakeFiles/GuiApp.dir/Platform/Linux/LinuxWindow.cpp.o
+/usr/bin/ar qc ../lib/libGuiApp.a CMakeFiles/GuiApp.dir/src/Application.cpp.o CMakeFiles/GuiApp.dir/src/LayerStack.cpp.o CMakeFiles/GuiApp.dir/Platform/Linux/LinuxWindow.cpp.o
 /usr/bin/ranlib ../lib/libGuiApp.a

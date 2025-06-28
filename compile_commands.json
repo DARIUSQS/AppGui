@@ -25,6 +25,12 @@
 },
 {
   "directory": "/home/darius/Dev/cpp/AppGui/Engine",
+  "command": "/usr/bin/c++  -I/home/darius/Dev/cpp/AppGui/Engine/src -I/home/darius/Dev/cpp/AppGui/Engine/vendor/glad/include/glad -I/home/darius/Dev/cpp/AppGui/Engine/vendor/glfw/include -I/home/darius/Dev/cpp/AppGui/Engine/vendor/ImGui/src -std=gnu++17 -Winvalid-pch -include /home/darius/Dev/cpp/AppGui/Engine/CMakeFiles/GuiApp.dir/cmake_pch.hxx -o CMakeFiles/GuiApp.dir/src/LayerStack.cpp.o -c /home/darius/Dev/cpp/AppGui/Engine/src/LayerStack.cpp",
+  "file": "/home/darius/Dev/cpp/AppGui/Engine/src/LayerStack.cpp",
+  "output": "Engine/CMakeFiles/GuiApp.dir/src/LayerStack.cpp.o"
+},
+{
+  "directory": "/home/darius/Dev/cpp/AppGui/Engine",
   "command": "/usr/bin/c++  -I/home/darius/Dev/cpp/AppGui/Engine/src -I/home/darius/Dev/cpp/AppGui/Engine/vendor/glad/include/glad -I/home/darius/Dev/cpp/AppGui/Engine/vendor/glfw/include -I/home/darius/Dev/cpp/AppGui/Engine/vendor/ImGui/src -std=gnu++17 -Winvalid-pch -include /home/darius/Dev/cpp/AppGui/Engine/CMakeFiles/GuiApp.dir/cmake_pch.hxx -o CMakeFiles/GuiApp.dir/Platform/Linux/LinuxWindow.cpp.o -c /home/darius/Dev/cpp/AppGui/Engine/Platform/Linux/LinuxWindow.cpp",
   "file": "/home/darius/Dev/cpp/AppGui/Engine/Platform/Linux/LinuxWindow.cpp",
   "output": "Engine/CMakeFiles/GuiApp.dir/Platform/Linux/LinuxWindow.cpp.o"

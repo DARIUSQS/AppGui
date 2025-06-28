@@ -12,7 +12,9 @@ namespace AppGui
         virtual uint32_t inline GetWidth() override {return m_Data.Width;};
         virtual uint32_t inline GetHeight() override {return m_Data.Height;};
 
-        virtual void SetEventCallback() override;
+        virtual void SetEventCallback(const std::function<void(Event&)>& function) override {m_Data.Callback = function;};
+
+        virtual void OnUpdate() override;
 
         void Init(const WindowProp& props);
         void Shutdown();

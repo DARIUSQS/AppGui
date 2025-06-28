@@ -1,5 +1,6 @@
 #pragma once
 #include "pch.h"
+#include <Event.h>
 
 namespace AppGui
 {
@@ -21,8 +22,8 @@ namespace AppGui
         virtual uint32_t inline GetWidth() = 0;
         virtual uint32_t inline GetHeight() = 0;
 
-        virtual void SetEventCallback() = 0;
+        virtual void SetEventCallback(const std::function<void(Event&)>& function) = 0;
 
-        static Window* Create(WindowProp props = WindowProp());
+        static Window* Create(const WindowProp& props = WindowProp());
     };
 }

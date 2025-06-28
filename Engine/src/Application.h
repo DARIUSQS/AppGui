@@ -1,4 +1,8 @@
 #pragma once
+#include "WindowTemplate.h"
+#include "LayerStack.h"
+#include "Layer.h"
+#include "pch.h"
 
 namespace AppGui
 {
@@ -8,11 +12,19 @@ namespace AppGui
         Application();
         ~Application();
 
-        void OnEvent();
+        void OnEvent(Event& event);
         void OnUpdate();
 
     private:
-        bool m_Running;
+        bool OnWindowClose(Event& event);
+
+        bool m_Running = true;
+        std::unique_ptr<Window> m_Window;
+        LayerStack m_LayerStack;
+
+
+    private:
+        static Application* m_Instance;
     };
 
     Application* CreateApplication();

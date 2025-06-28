@@ -1,5 +1,6 @@
 #pragma once
 #include "Application.h"
+#include <iostream>
 
 extern AppGui::Application* AppGui::CreateApplication();
 

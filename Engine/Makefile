@@ -238,6 +238,30 @@ src/Application.cpp.s:
 	cd /home/darius/Dev/cpp/AppGui && $(MAKE) $(MAKESILENT) -f Engine/CMakeFiles/GuiApp.dir/build.make Engine/CMakeFiles/GuiApp.dir/src/Application.cpp.s
 .PHONY : src/Application.cpp.s
 
+src/LayerStack.o: src/LayerStack.cpp.o
+.PHONY : src/LayerStack.o
+
+# target to build an object file
+src/LayerStack.cpp.o:
+	cd /home/darius/Dev/cpp/AppGui && $(MAKE) $(MAKESILENT) -f Engine/CMakeFiles/GuiApp.dir/build.make Engine/CMakeFiles/GuiApp.dir/src/LayerStack.cpp.o
+.PHONY : src/LayerStack.cpp.o
+
+src/LayerStack.i: src/LayerStack.cpp.i
+.PHONY : src/LayerStack.i
+
+# target to preprocess a source file
+src/LayerStack.cpp.i:
+	cd /home/darius/Dev/cpp/AppGui && $(MAKE) $(MAKESILENT) -f Engine/CMakeFiles/GuiApp.dir/build.make Engine/CMakeFiles/GuiApp.dir/src/LayerStack.cpp.i
+.PHONY : src/LayerStack.cpp.i
+
+src/LayerStack.s: src/LayerStack.cpp.s
+.PHONY : src/LayerStack.s
+
+# target to generate assembly for a file
+src/LayerStack.cpp.s:
+	cd /home/darius/Dev/cpp/AppGui && $(MAKE) $(MAKESILENT) -f Engine/CMakeFiles/GuiApp.dir/build.make Engine/CMakeFiles/GuiApp.dir/src/LayerStack.cpp.s
+.PHONY : src/LayerStack.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -260,6 +284,9 @@ help:
 	@echo "... src/Application.o"
 	@echo "... src/Application.i"
 	@echo "... src/Application.s"
+	@echo "... src/LayerStack.o"
+	@echo "... src/LayerStack.i"
+	@echo "... src/LayerStack.s"
 .PHONY : help
 
 

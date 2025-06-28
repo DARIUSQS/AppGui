@@ -16,6 +16,7 @@ add_subdirectory(vendor/glad)
 
 add_library(GuiApp STATIC 
                             src/Application.cpp                           
+                            src/LayerStack.cpp 
                             Platform/Linux/LinuxWindow.cpp
 )
 

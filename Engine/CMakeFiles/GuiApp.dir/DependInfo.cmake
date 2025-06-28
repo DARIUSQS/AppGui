@@ -14,6 +14,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/darius/Dev/cpp/AppGui/Engine/CMakeFiles/GuiApp.dir/cmake_pch.hxx" "Engine/CMakeFiles/GuiApp.dir/cmake_pch.hxx.gch" "gcc" "Engine/CMakeFiles/GuiApp.dir/cmake_pch.hxx.gch.d"
   "/home/darius/Dev/cpp/AppGui/Engine/src/Application.cpp" "Engine/CMakeFiles/GuiApp.dir/src/Application.cpp.o" "gcc" "Engine/CMakeFiles/GuiApp.dir/src/Application.cpp.o.d"
   "/home/darius/Dev/cpp/AppGui/Engine/CMakeFiles/GuiApp.dir/cmake_pch.hxx" "Engine/CMakeFiles/GuiApp.dir/src/Application.cpp.o" "gcc" "Engine/CMakeFiles/GuiApp.dir/src/Application.cpp.o.d"
+  "/home/darius/Dev/cpp/AppGui/Engine/src/LayerStack.cpp" "Engine/CMakeFiles/GuiApp.dir/src/LayerStack.cpp.o" "gcc" "Engine/CMakeFiles/GuiApp.dir/src/LayerStack.cpp.o.d"
+  "/home/darius/Dev/cpp/AppGui/Engine/CMakeFiles/GuiApp.dir/cmake_pch.hxx" "Engine/CMakeFiles/GuiApp.dir/src/LayerStack.cpp.o" "gcc" "Engine/CMakeFiles/GuiApp.dir/src/LayerStack.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

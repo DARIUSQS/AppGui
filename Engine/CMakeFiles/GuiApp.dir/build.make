@@ -103,12 +103,28 @@ Engine/CMakeFiles/GuiApp.dir/src/Application.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GuiApp.dir/src/Application.cpp.s"
 	cd /home/darius/Dev/cpp/AppGui/Engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/darius/Dev/cpp/AppGui/Engine/CMakeFiles/GuiApp.dir/cmake_pch.hxx -S /home/darius/Dev/cpp/AppGui/Engine/src/Application.cpp -o CMakeFiles/GuiApp.dir/src/Application.cpp.s
 
+Engine/CMakeFiles/GuiApp.dir/src/LayerStack.cpp.o: Engine/CMakeFiles/GuiApp.dir/flags.make
+Engine/CMakeFiles/GuiApp.dir/src/LayerStack.cpp.o: Engine/src/LayerStack.cpp
+Engine/CMakeFiles/GuiApp.dir/src/LayerStack.cpp.o: Engine/CMakeFiles/GuiApp.dir/cmake_pch.hxx
+Engine/CMakeFiles/GuiApp.dir/src/LayerStack.cpp.o: Engine/CMakeFiles/GuiApp.dir/cmake_pch.hxx.gch
+Engine/CMakeFiles/GuiApp.dir/src/LayerStack.cpp.o: Engine/CMakeFiles/GuiApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/darius/Dev/cpp/AppGui/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Engine/CMakeFiles/GuiApp.dir/src/LayerStack.cpp.o"
+	cd /home/darius/Dev/cpp/AppGui/Engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/darius/Dev/cpp/AppGui/Engine/CMakeFiles/GuiApp.dir/cmake_pch.hxx -MD -MT Engine/CMakeFiles/GuiApp.dir/src/LayerStack.cpp.o -MF CMakeFiles/GuiApp.dir/src/LayerStack.cpp.o.d -o CMakeFiles/GuiApp.dir/src/LayerStack.cpp.o -c /home/darius/Dev/cpp/AppGui/Engine/src/LayerStack.cpp
+
+Engine/CMakeFiles/GuiApp.dir/src/LayerStack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GuiApp.dir/src/LayerStack.cpp.i"
+	cd /home/darius/Dev/cpp/AppGui/Engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/darius/Dev/cpp/AppGui/Engine/CMakeFiles/GuiApp.dir/cmake_pch.hxx -E /home/darius/Dev/cpp/AppGui/Engine/src/LayerStack.cpp > CMakeFiles/GuiApp.dir/src/LayerStack.cpp.i
+
+Engine/CMakeFiles/GuiApp.dir/src/LayerStack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GuiApp.dir/src/LayerStack.cpp.s"
+	cd /home/darius/Dev/cpp/AppGui/Engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/darius/Dev/cpp/AppGui/Engine/CMakeFiles/GuiApp.dir/cmake_pch.hxx -S /home/darius/Dev/cpp/AppGui/Engine/src/LayerStack.cpp -o CMakeFiles/GuiApp.dir/src/LayerStack.cpp.s
+
 Engine/CMakeFiles/GuiApp.dir/Platform/Linux/LinuxWindow.cpp.o: Engine/CMakeFiles/GuiApp.dir/flags.make
 Engine/CMakeFiles/GuiApp.dir/Platform/Linux/LinuxWindow.cpp.o: Engine/Platform/Linux/LinuxWindow.cpp
 Engine/CMakeFiles/GuiApp.dir/Platform/Linux/LinuxWindow.cpp.o: Engine/CMakeFiles/GuiApp.dir/cmake_pch.hxx
 Engine/CMakeFiles/GuiApp.dir/Platform/Linux/LinuxWindow.cpp.o: Engine/CMakeFiles/GuiApp.dir/cmake_pch.hxx.gch
 Engine/CMakeFiles/GuiApp.dir/Platform/Linux/LinuxWindow.cpp.o: Engine/CMakeFiles/GuiApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/darius/Dev/cpp/AppGui/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Engine/CMakeFiles/GuiApp.dir/Platform/Linux/LinuxWindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/darius/Dev/cpp/AppGui/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Engine/CMakeFiles/GuiApp.dir/Platform/Linux/LinuxWindow.cpp.o"
 	cd /home/darius/Dev/cpp/AppGui/Engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/darius/Dev/cpp/AppGui/Engine/CMakeFiles/GuiApp.dir/cmake_pch.hxx -MD -MT Engine/CMakeFiles/GuiApp.dir/Platform/Linux/LinuxWindow.cpp.o -MF CMakeFiles/GuiApp.dir/Platform/Linux/LinuxWindow.cpp.o.d -o CMakeFiles/GuiApp.dir/Platform/Linux/LinuxWindow.cpp.o -c /home/darius/Dev/cpp/AppGui/Engine/Platform/Linux/LinuxWindow.cpp
 
 Engine/CMakeFiles/GuiApp.dir/Platform/Linux/LinuxWindow.cpp.i: cmake_force
@@ -122,6 +138,7 @@ Engine/CMakeFiles/GuiApp.dir/Platform/Linux/LinuxWindow.cpp.s: cmake_force
 # Object files for target GuiApp
 GuiApp_OBJECTS = \
 "CMakeFiles/GuiApp.dir/src/Application.cpp.o" \
+"CMakeFiles/GuiApp.dir/src/LayerStack.cpp.o" \
 "CMakeFiles/GuiApp.dir/Platform/Linux/LinuxWindow.cpp.o"
 
 # External object files for target GuiApp
@@ -129,10 +146,11 @@ GuiApp_EXTERNAL_OBJECTS =
 
 lib/libGuiApp.a: Engine/CMakeFiles/GuiApp.dir/cmake_pch.hxx.gch
 lib/libGuiApp.a: Engine/CMakeFiles/GuiApp.dir/src/Application.cpp.o
+lib/libGuiApp.a: Engine/CMakeFiles/GuiApp.dir/src/LayerStack.cpp.o
 lib/libGuiApp.a: Engine/CMakeFiles/GuiApp.dir/Platform/Linux/LinuxWindow.cpp.o
 lib/libGuiApp.a: Engine/CMakeFiles/GuiApp.dir/build.make
 lib/libGuiApp.a: Engine/CMakeFiles/GuiApp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/darius/Dev/cpp/AppGui/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library ../lib/libGuiApp.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/darius/Dev/cpp/AppGui/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library ../lib/libGuiApp.a"
 	cd /home/darius/Dev/cpp/AppGui/Engine && $(CMAKE_COMMAND) -P CMakeFiles/GuiApp.dir/cmake_clean_target.cmake
 	cd /home/darius/Dev/cpp/AppGui/Engine && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GuiApp.dir/link.txt --verbose=$(VERBOSE)
 
